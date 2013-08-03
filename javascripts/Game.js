@@ -38,7 +38,7 @@ Movable.prototype.MoveRight = function(x, y)
 
 
 
-function GameInitilize()
+function GameInitilize2()
 {
   dad = new Movable('Dad', 3, 5); 
   mom = new Movable('Mom', 5, 59); 
@@ -47,5 +47,13 @@ function GameInitilize()
   candyhouse = new Movable('CandyHouse', 60, 75); 
 }
 
+
+function GameInitilize()
+{ 
+  document.ready(GameInitilize2());
+}
+
+
+GameInitilize();
 
 
