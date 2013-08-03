@@ -6,7 +6,7 @@ function Movable(id, x, y) {
   this.htmlObj = document.getElementById(id);
   this.htmlObj.style.left = (this.currentX + "px");
   this.htmlObj.style.top = (this.currentY + "px");
-
+  console.log('Movable() id=' + id + '  currentX = ' + this.currentX + "px    currentX =" + this.currentY + "px");
 }
 
 
