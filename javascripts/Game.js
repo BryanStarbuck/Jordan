@@ -4,8 +4,8 @@ function Movable(id, x, y) {
   this.id = id;
 
   this.htmlObj = document.getElementById(id);
-  this.htmlObj.style.left = this.currentX;
-  this.htmlObj.style.top = this.currentY;
+  this.htmlObj.style.left = (this.currentX + "px");
+  this.htmlObj.style.top = (this.currentY + "px");
 
 }
 
