@@ -38,7 +38,7 @@ Movable.prototype.MoveRight = function(x, y)
 
 
 
-GameInitilize()
+function GameInitilize()
 {
   dad = new Movable('Dad', 3, 5); 
   mom = new Movable('Mom', 5, 59); 
