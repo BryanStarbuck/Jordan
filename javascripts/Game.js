@@ -18,22 +18,22 @@ Movable.prototype.move = function(x, y)
 
 Movable.prototype.MoveUp = function(x, y)
 {
-  move.move(this.destX, this.destY - 10);
+  move(this.destX, this.destY - 10);
 }
 
 Movable.prototype.MoveDown = function(x, y)
 {
-  move.move(this.destX, this.destY + 10);
+  move(this.destX, this.destY + 10);
 }
 
 Movable.prototype.MoveLeft = function(x, y)
 {
-  move.move(this.destX - 10, this.destY);
+  move(this.destX - 10, this.destY);
 }
 
 Movable.prototype.MoveRight = function(x, y)
 {
-  move.move(this.destX + 10, this.destY);
+  move(this.destX + 10, this.destY);
 }
 
 
