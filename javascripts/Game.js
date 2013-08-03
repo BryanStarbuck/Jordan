@@ -45,7 +45,7 @@ function GameInitilize()
   jordan = new Movable('Jordan', 40, 20); 
   house = new Movable('House', 60, 5); 
   candyhouse = new Movable('CandyHouse', 60, 75); 
-};
+}
 
 
 
