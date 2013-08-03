@@ -48,7 +48,7 @@ function GameInitilize2()
 }
 
 
-function GameInitilize()
+function GameInitilize(e)
 { 
   document.onload(GameInitilize2());
 }
