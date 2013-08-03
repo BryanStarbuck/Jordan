@@ -2,12 +2,13 @@ function Movable(id, x, y) {
   this.currentX = x;
   this.currentY = y;
   this.id = id;
+
+  this.htmlObj = document.getElementById(id);
+  this.htmlObj.left = this.currentX;
+  this.htmlObj.top = this.currentY;
+
 }
 
-Movable.prototype.sayHello = function()
-{
-  alert ('hello');
-};
 
 Movable.prototype.move = function(x, y)
 {
@@ -34,3 +35,12 @@ Movable.prototype.MoveRight = function(x, y)
 {
   move.move(this.destX + 10, this.destY);
 };
+
+
+
+function GameInitilize()
+{
+};
+
+
+
