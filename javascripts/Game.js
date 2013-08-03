@@ -38,14 +38,14 @@ Movable.prototype.MoveRight = function(x, y)
 
 
 
-function GameInitilize()
+GameInitilize()
 {
   dad = new Movable('Dad', 3, 5); 
   mom = new Movable('Mom', 5, 59); 
   jordan = new Movable('Jordan', 40, 20); 
   house = new Movable('House', 60, 5); 
   candyhouse = new Movable('CandyHouse', 60, 75); 
-}
+};
 
 
 
