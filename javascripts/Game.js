@@ -50,7 +50,7 @@ function GameInitilize2()
 
 function GameInitilize(e)
 { 
-  document.onload(GameInitilize2());
+  document.onload = GameInitilize2;
 }
 
 
