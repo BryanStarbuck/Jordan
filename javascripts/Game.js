@@ -1,4 +1,4 @@
-var things = new Array();
+var things = null;
 
 function Movable(id, x, y) {
   this.currentX = x;
@@ -67,6 +67,8 @@ function GameInitilize2(e)
 //  console.log('Finished GameInitialize2()');
   
   things = new Array(dad, mom, jordan, house, candyhouse);
+  console.log('In GameInitilize2().   things.length=' + things.length);
+
   dad.InitialScale();
   console.log('GameInitilize2: id=' + things[0].id);
   ScaleObjects();
