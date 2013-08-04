@@ -55,6 +55,6 @@ function GameInitilize(e)
 }
 
 
-// GameInitilize();
+GameInitilize();
 
 
