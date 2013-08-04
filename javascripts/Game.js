@@ -58,6 +58,7 @@ function ScaleObjects()
 //  console.log('in ScaleObjects()');
   for (var nIndex = 0; nIndex < things.lenght; nIndex++)
   {  
+      console.log('For loop in ScaleObjects()');
       console.log('In ScaleObjects().   thisThing.id=' + things[nIndex].id);
       var thisItem = things[nIndex];
       thisItem.InitialScale();  
