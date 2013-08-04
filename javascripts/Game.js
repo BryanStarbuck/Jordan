@@ -51,13 +51,15 @@ Movable.prototype.InitialScale = function()
 
 function ScaleObjects()
 {
-  console.log('In ScaleObjects().   things.length=' + things.length);
-  console.log('In ScaleObjects().   things.[length].id=' + things[0].id);
-  console.log('in ScaleObjects()');
-  for (var thisThing in things)  {  
-      console.log('In ScaleObjects().   thisThing.id=' + thisThing.id);
-    thisThing.InitialScale();  }
-  console.log('Done ScaleObjects()');
+//  console.log('In ScaleObjects().   things.length=' + things.length);
+//  console.log('In ScaleObjects().   things.[length].id=' + things[0].id);
+//  console.log('in ScaleObjects()');
+  for (var nIndex = 0; nIndex < things.lenght; nIndex++)
+  {  
+      console.log('In ScaleObjects().   thisThing.id=' + things[nIndex].id);
+    things[nIndex].InitialScale();  
+  }
+//  console.log('Done ScaleObjects()');
 }
 
 function GameInitilize2(e)
