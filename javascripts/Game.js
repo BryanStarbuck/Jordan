@@ -38,7 +38,7 @@ Movable.prototype.MoveRight = function(x, y)
   move(this.destX + 10, this.destY);
 }
 
-Movable.prototype.MoveRight = InitialScale()
+Movable.prototype.InitialScale = function()
 {
   console.log('in InitialScale()');
   console.log('In InitialScale().   this.htmlObj.style.width=' + this.htmlObj.style.width + '   id=' + id);
