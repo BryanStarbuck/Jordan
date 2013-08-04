@@ -59,9 +59,10 @@ function ScaleObjects()
   for (var nIndex = 0; nIndex < things.lenght; nIndex++)
   {  
       console.log('In ScaleObjects().   thisThing.id=' + things[nIndex].id);
-    things[nIndex].InitialScale();  
+      var thisItem = things[nIndex];
+      thisItem.InitialScale();  
   }
-//  console.log('Done ScaleObjects()');
+  console.log('Done ScaleObjects()');
 }
 
 function GameInitilize2(e)
