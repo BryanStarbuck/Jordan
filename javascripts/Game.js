@@ -1,4 +1,4 @@
-var things;
+var things = new;
 
 function Movable(id, x, y) {
   this.currentX = x;
@@ -43,6 +43,8 @@ Movable.prototype.InitialScale = function()
   console.log('in InitialScale()');
   console.log('In InitialScale().   this.htmlObj.style.width=' + this.htmlObj.style.width + '   id=' /*+ this.id*/);
   console.log('In InitialScale().   DAD id=' + dad.id);
+  console.log('In InitialScale().   this.htmlObj.style id=' + this.htmlObj.id);
+
 //  this.htmlObj = document.getElementById(id);
 //  this.htmlObj.style.width = (this.currentX + "px");
 }
