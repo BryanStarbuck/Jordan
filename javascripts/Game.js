@@ -56,7 +56,7 @@ function ScaleObjects()
   console.log('In ScaleObjects().   things.length=' + things.length);
 //  console.log('In ScaleObjects().   things.[length].id=' + things[0].id);
 //  console.log('in ScaleObjects()');
-  for (var nIndex = 0; nIndex < things.lenght; nIndex++)
+  for (var nIndex = 0; nIndex < things.length; nIndex++)
   {  
       console.log('For loop in ScaleObjects()');
       console.log('In ScaleObjects().   thisThing.id=' + things[nIndex].id);
