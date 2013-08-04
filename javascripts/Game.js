@@ -38,7 +38,7 @@ Movable.prototype.MoveRight = function(x, y)
 
 
 
-function GameInitilize2()
+function GameInitilize2(e)
 {
   console.log('Finished GameInitialize2()');
   dad = new Movable("Dad", 3, 5); 
@@ -53,7 +53,7 @@ function GameInitilize2()
 function GameInitilize(e)
 { 
   console.log('In GameInitialize()');
-  document.onload = GameInitilize2;
+  window.document.onload = GameInitilize2;
 }
 
 
