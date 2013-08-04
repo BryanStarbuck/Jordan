@@ -53,7 +53,8 @@ function GameInitilize2(e)
 function GameInitilize(e)
 { 
   console.log('In GameInitialize()');
-  window.document.onload = GameInitilize2;
+//  window.document.onload = GameInitilize2;
+  $(document).ready(GameInitilize2);
 }
 
 
