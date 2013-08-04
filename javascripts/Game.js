@@ -66,7 +66,7 @@ function ScaleObjects()
 
 function GameInitilize2(e)
 {
-//  console.log('in GameInitialize2()');
+  console.log('in GameInitialize2()');
   dad = new Movable("Dad", 3, 5); 
   mom = new Movable("Mom", 5, 59); 
   jordan = new Movable("Jordan", 40, 20); 
