@@ -68,7 +68,8 @@ function GameInitilize2(e)
   
   things = new Array(dad, mom, jordan, house, candyhouse);
   console.log('In GameInitilize2().   things.length=' + things.length);
-
+  console.log('In GameInitilize2().   things.[length].id=' + things[0].id);
+  
   dad.InitialScale();
   console.log('GameInitilize2: id=' + things[0].id);
   ScaleObjects();
@@ -84,7 +85,7 @@ function GameInitilize(e)
 
 
 
-console.log('Running Game.js global code.');
+// console.log('Running Game.js global code.');
 GameInitilize();
 
 
