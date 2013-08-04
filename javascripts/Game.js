@@ -42,7 +42,9 @@ Movable.prototype.InitialScale = function()
 {
   console.log('in InitialScale()');
   console.log('In InitialScale().   this.htmlObj.style.width=' + this.htmlObj.style.width + '   id=' /*+ this.id*/);
-  console.log('In InitialScale().   DAD id=' + dad.id);
+  console.log('In InitialScale().   this.htmlObj.width=' + this.htmlObj.width() );
+
+console.log('In InitialScale().   DAD id=' + dad.id);
   console.log('In InitialScale().   this.htmlObj.style id=' + this.htmlObj.id);
 
 //  this.htmlObj = document.getElementById(id);
@@ -73,9 +75,7 @@ function GameInitilize2(e)
 //  console.log('Finished GameInitialize2()');
   
   things = new Array(dad, mom, jordan, house, candyhouse);
-  
-  dad.InitialScale();
-//  console.log('GameInitilize2: id=' + things[0].id);
+  //  console.log('GameInitilize2: id=' + things[0].id);
   ScaleObjects();
 }
 
