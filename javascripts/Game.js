@@ -45,8 +45,9 @@ Movable.prototype.InitialScale = function()
 //  console.log('In InitialScale().   this.htmlObj.width=' + this.htmlObj.width );
 
   console.log('In InitialScale().   jQuery Width=' + $("#" + this.id).width());
-  console.log('In InitialScale().   this.clientWidth=' + this.htmlObj.naturalWidth);
-  console.log('In InitialScale().   this.htmlObj.style id=' + this.htmlObj.htmlObj.id);
+  console.log('In InitialScale().   this.naturalWidth=' + this.htmlObj.naturalWidth);
+  console.log('In InitialScale().   this.clientWidth=' + this.htmlObj.clientWidth);
+  console.log('In InitialScale().   this.htmlObj.style id=' + this.htmlObj.id);
 
   var nNewWidth = (this.htmlObj.naturalWidth * parseFloat(this.htmlObj.scale));
   console.log('In InitialScale().   nNewWidth=' + nNewWidth);
@@ -61,12 +62,12 @@ Movable.prototype.InitialScale = function()
 
 function ScaleObjects()
 {
-  console.log('In ScaleObjects().   things.length=' + things.length);
+//  console.log('In ScaleObjects().   things.length=' + things.length);
 //  console.log('In ScaleObjects().   things.[length].id=' + things[0].id);
 //  console.log('in ScaleObjects()');
   for (var nIndex = 0; nIndex < things.length; nIndex++)
   {  
-      console.log('In ScaleObjects().   thisThing.id=' + things[nIndex].id);
+//      console.log('In ScaleObjects().   thisThing.id=' + things[nIndex].id);
       var thisItem = things[nIndex];
       thisItem.InitialScale();  
   }
