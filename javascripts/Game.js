@@ -44,8 +44,16 @@ Movable.prototype.InitialScale = function()
   console.log('In InitialScale().   this.htmlObj.style.width=' + this.htmlObj.style.width + '   id=' + this.id);
 //  console.log('In InitialScale().   this.htmlObj.width=' + this.htmlObj.width );
 
-console.log('In InitialScale().   DAD id=' + dad.id);
-  console.log('In InitialScale().   this.htmlObj.style id=' + this.htmlObj.id);
+  console.log('In InitialScale().   jQuery Width=' + $("#" + this.id).width());
+  console.log('In InitialScale().   this.clientWidth=' + this.htmlObj.naturalWidth);
+  console.log('In InitialScale().   this.htmlObj.style id=' + this.htmlObj.htmlObj.id);
+
+  var nNewWidth = (this.htmlObj.naturalWidth * parseFloat(this.htmlObj.scale));
+  console.log('In InitialScale().   nNewWidth=' + nNewWidth);
+  var nNewHeight = (this.htmlObj.naturalHeight * parseFloat(this.htmlObj.scale));
+  console.log('In InitialScale().   nNewHeight=' + nNewHeight);
+  this.htmlObj.width = nNewWidth;
+  this.htmlObj.height = nNewHeight;
 
 //  this.htmlObj = document.getElementById(id);
 //  this.htmlObj.style.width = (this.currentX + "px");
