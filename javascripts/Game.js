@@ -51,10 +51,13 @@ function GameInitilize2()
 
 function GameInitilize(e)
 { 
+  console.log('In GameInitialize()');
   document.onload = GameInitilize2;
 }
 
 
+
+console.log('Running Game.js global code.');
 GameInitilize();
 
 
