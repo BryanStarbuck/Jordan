@@ -8,7 +8,7 @@ function Movable(id, x, y) {
   this.htmlObj = document.getElementById(id);
   this.htmlObj.style.left = (this.currentX + "px");
   this.htmlObj.style.top = (this.currentY + "px");
-  console.log('Movable() id=' + id + '  currentX = ' + this.currentX + "px    currentX =" + this.currentY + "px");
+//  console.log('Movable() id=' + id + '  currentX = ' + this.currentX + "px    currentX =" + this.currentY + "px");
 }
 
 
@@ -40,6 +40,7 @@ Movable.prototype.MoveRight = function(x, y)
 
 Movable.prototype.MoveRight = InitialScale()
 {
+  console.log('in InitialScale()');
   console.log('In InitialScale().   this.htmlObj.style.width=' + this.htmlObj.style.width + '   id=' + id);
 //  this.htmlObj = document.getElementById(id);
 //  this.htmlObj.style.width = (this.currentX + "px");
@@ -47,18 +48,20 @@ Movable.prototype.MoveRight = InitialScale()
 
 function ScaleObjects()
 {
+  console.log('in ScaleObjects()');
   for (var thisThing in things)  {  thisThing.InitialScale();  }
+  console.log('Done ScaleObjects()');
 }
 
 function GameInitilize2(e)
 {
-  console.log('Finished GameInitialize2()');
+  console.log('in GameInitialize2()');
   dad = new Movable("Dad", 3, 5); 
   mom = new Movable("Mom", 5, 59); 
   jordan = new Movable("Jordan", 40, 20); 
   house = new Movable("House", 60, 5); 
   candyhouse = new Movable("CandyHouse", 60, 75); 
-  console.log('Finished GameInitialize2()');
+//  console.log('Finished GameInitialize2()');
   
   things = new Array(dad, mom, jordan, house, candyhouse);
   ScaleObjects();
