@@ -51,6 +51,8 @@ Movable.prototype.InitialScale = function()
 
 function ScaleObjects()
 {
+  console.log('In GameInitilize2().   things.length=' + things.length);
+  console.log('In GameInitilize2().   things.[length].id=' + things[0].id);
   console.log('in ScaleObjects()');
   for (var thisThing in things)  {  thisThing.InitialScale();  }
   console.log('Done ScaleObjects()');
@@ -58,7 +60,7 @@ function ScaleObjects()
 
 function GameInitilize2(e)
 {
-  console.log('in GameInitialize2()');
+//  console.log('in GameInitialize2()');
   dad = new Movable("Dad", 3, 5); 
   mom = new Movable("Mom", 5, 59); 
   jordan = new Movable("Jordan", 40, 20); 
@@ -67,11 +69,9 @@ function GameInitilize2(e)
 //  console.log('Finished GameInitialize2()');
   
   things = new Array(dad, mom, jordan, house, candyhouse);
-  console.log('In GameInitilize2().   things.length=' + things.length);
-  console.log('In GameInitilize2().   things.[length].id=' + things[0].id);
   
   dad.InitialScale();
-  console.log('GameInitilize2: id=' + things[0].id);
+//  console.log('GameInitilize2: id=' + things[0].id);
   ScaleObjects();
 }
 
