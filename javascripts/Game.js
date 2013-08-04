@@ -1,3 +1,5 @@
+var things;
+
 function Movable(id, x, y) {
   this.currentX = x;
   this.currentY = y;
@@ -36,7 +38,17 @@ Movable.prototype.MoveRight = function(x, y)
   move(this.destX + 10, this.destY);
 }
 
+Movable.prototype.MoveRight = InitialScale()
+{
+  console.log('In InitialScale().   this.htmlObj.style.width=' + this.htmlObj.style.width + '   id=' + id);
+//  this.htmlObj = document.getElementById(id);
+//  this.htmlObj.style.width = (this.currentX + "px");
+}
 
+function ScaleObjects()
+{
+  for (var thisThing in things)  {  thisThing.InitialScale();  }
+}
 
 function GameInitilize2(e)
 {
@@ -47,12 +59,15 @@ function GameInitilize2(e)
   house = new Movable("House", 60, 5); 
   candyhouse = new Movable("CandyHouse", 60, 75); 
   console.log('Finished GameInitialize2()');
+  
+  things = new Array(dad, mom, jordan, house, candyhouse);
+  ScaleObjects();
 }
 
 
 function GameInitilize(e)
 { 
-  console.log('In GameInitialize()');
+//  console.log('In GameInitialize()');
 //  window.document.onload = GameInitilize2;
   $(document).ready(GameInitilize2);
 }
