@@ -53,7 +53,7 @@ console.log('In InitialScale().   DAD id=' + dad.id);
 
 function ScaleObjects()
 {
-//  console.log('In ScaleObjects().   things.length=' + things.length);
+  console.log('In ScaleObjects().   things.length=' + things.length);
 //  console.log('In ScaleObjects().   things.[length].id=' + things[0].id);
 //  console.log('in ScaleObjects()');
   for (var nIndex = 0; nIndex < things.lenght; nIndex++)
