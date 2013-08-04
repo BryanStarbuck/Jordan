@@ -64,6 +64,8 @@ function GameInitilize2(e)
 //  console.log('Finished GameInitialize2()');
   
   things = new Array(dad, mom, jordan, house, candyhouse);
+  dad.InitialScale();
+  console.log('GameInitilize2: id=' + things[0].id);
   ScaleObjects();
 }
 
