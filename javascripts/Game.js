@@ -1,4 +1,4 @@
-var things = new;
+var things = new Array();
 
 function Movable(id, x, y) {
   this.currentX = x;
