@@ -40,6 +40,7 @@ Movable.prototype.MoveRight = function(x, y)
 
 function GameInitilize2()
 {
+  console.log('Finished GameInitialize2()');
   dad = new Movable("Dad", 3, 5); 
   mom = new Movable("Mom", 5, 59); 
   jordan = new Movable("Jordan", 40, 20); 
